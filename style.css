@@ -1,0 +1,48 @@
+#divider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.grid {
+      display: grid;
+      grid-template-columns: repeat(28, 15px);
+      grid-template-rows: repeat(28, 15px);
+    }
+
+    .cell {
+      background-color: #eee;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      user-select: none;
+    }
+
+    .active {
+      background-color: #000000;
+      color: white;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    pre {
+      margin-top: 20px;
+      background: #f4f4f4;
+      padding: 10px;
+    }
+    #btnZone{
+            align-items: center;
+      justify-content: center;
+    }
+
+.t {
+  display: grid;
+  padding: 10px;
+}
