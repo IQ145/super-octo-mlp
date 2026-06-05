@@ -135,7 +135,7 @@ let trainingFrequency = 2000;
 
 async function caricaDati() {
     try {
-        const response = await fetch('../model/data.json');
+        const response = await fetch('data.json');
 
         if (!response.ok) {
             throw new Error('Errore nel caricamento');
