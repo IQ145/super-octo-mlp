@@ -1,4 +1,5 @@
 # super-octo-mlp
+-PER CAPOLAVORO
 Rete neurale che individua se una figura è un triangolo, rombo o quadrato.
 
 
@@ -20,3 +21,14 @@ COME USARE MLP:
 
 la prima cifra (0,1,2) sta a significare la figura (triangolo, quadrato, rombo)
 0.9999811548780263% è quanto probabile si sente giusto il sistema
+
+COSA SUCCEDE ALL'INTERNO:
+1)I dati in formato di matrice 28x28 presenti nel file data.json vengono presi e convertiti in un array di 784 elementi.
+2)Questi array vengono centrati e trasformati per essere modificabili da PCA
+2)PCA (Analisi delle componenti principali) prende l'insieme di tutti questi dati e li converte in coordinate x e y
+3)Si creano 3 MLP (Multi Layered Perceptron) e ad ogni MLP gli si assegna due tipologie di dati: 1)I dati della figura interessata. 2)Tutti gli altri dati.
+Quindi ogni MLP è specializzata in osservare solo una singola figura.
+
+Training: 
+1)Ad ogni MLP gli viene dato in volte tante volte gli stessi dati.
+2)Dopo ogni training, i suoi pesi si correggono di poco fino ad
